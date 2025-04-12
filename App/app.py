@@ -93,7 +93,7 @@ class PlantDiseaseApp:
 
                 pred, prob = self.predict(filePath)
                 if pred is None:
-                    return render_template("submit.html", title="Uncertain Diagnosis", desc="The picture might not contain sufficient greenery for AgriScan to diagnose. Consider uploading a focused image of the plant that contains greenary in the background!")
+                    return render_template("submit.html", title="Uncertain Plant Diagnosis", desc="The picture might not contain sufficient greenery for AgriScan to diagnose. Consider uploading a focused image of the plant that contains greenary in the background!")
 
                 title = self.diseaseInfo['disease_name'][pred]
                 description = self.diseaseInfo['description'][pred]
