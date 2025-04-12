@@ -3,9 +3,8 @@ from flask import Flask, render_template, request, jsonify
 from PIL import Image
 import pandas as pd
 import torch
-import torch.nn as nn
 import torch.nn.functional as nn_func
-from torchvision import transforms, models
+from torchvision import transforms
 
 from model.CNN import CNN
 
@@ -94,7 +93,7 @@ class PlantDiseaseApp:
 
                 pred, prob = self.predict(filePath)
                 if pred is None:
-                    return render_template("submit.html", title="Prediction Failed", desc="There was an error during prediction.")
+                    return render_template("submit.html", title="Uncertain Diagnosis", desc="The picture might not contain sufficient greenery for AgriScan to diagnose. Consider uploading a focused image of the plant that contains greenary in the background!")
 
                 title = self.diseaseInfo['disease_name'][pred]
                 description = self.diseaseInfo['description'][pred]
