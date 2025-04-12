@@ -56,7 +56,7 @@ python app.py runserver
 [AgriScanDemo.mp4]
 
 ## Contributions
-1. [Jex - AI for Society AgriScan Proof-of-Concept (POC)](https://github.com/Jex)
+1. [Lin Jun Yang, Jex - AI for Society AgriScan Proof-of-Concept (POC)](https://github.com/Jchineseeee)
 2. [Evan Ang - Model Training](https://github.com/EvanAngQiXuan)
 3. [Ong Yi Chen - Model Deployment & Web Application](https://github.com/ongyichen)
 
