@@ -46,11 +46,11 @@ python -m venv .venv
 
 4. Activate the virtual environment
 ```
-   source ./.venv/bin/activate
+source ./.venv/bin/activate
 ```
 5. Run the Flask server:
 ```
-   python app.py runserver   
+python app.py runserver   
 ```
 ## Video-Demonstration
 [AgriScanDemo.mp4]
