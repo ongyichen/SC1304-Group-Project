@@ -52,8 +52,6 @@ source ./.venv/bin/activate
 ```
 python app.py runserver   
 ```
-## Video-Demonstration
-[AgriScanDemo.mp4]
 
 ## Contributions
 1. [Lin Jun Yang, Jex - AI for Society AgriScan Proof-of-Concept (POC)](https://github.com/Jchineseeee)
